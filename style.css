@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600;800&display=swap');
+body
+{
+	font-family: 'Raleway', sans-serif;
+	background-color: #3c1518;
+	color: #f2f3ae;
+}
+
+a
+{
+	text-decoration: none;
+	color: #f2f3ae;
+}
+
+a:hover
+{
+	color: #D58936;
+	transition: all 0.3s linear;
+}
+
+.logo
+{
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 20px;
+	margin-top: 14px;
+}
+
+.menu
+{
+	margin-top: 20px;
+	position: relative;
+
+}
+.menu ul > li
+{
+	display: inline-block;
+	width:  120px;
+	float: left;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.menu ul > li > ul
+{
+	display: none;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	z-index: 100;
+}
+.menu ul > li > ul > li
+{
+	width: 120px;
+	padding: 0;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	clear: both;
+
+
+
+}
+
+.menu ul >li:hover > ul
+{
+	display: block;;
+
+}
+
+
+.bg-video video
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	opacity: 0.1;
+	width: 100%;
+	object-fit: cover;
+	overflow-y: hidden;
+	height: 100%;
+
+}
+.banner
+{
+	text-align: center;
+	font-weight: 400;
+	font-size: 50px;
+	margin-top: 10%;
+}
+.banner-button
+{
+	text-align: center;
+	font-weight: 400;
+	font-size: 42px;
+	border: 1px solid #f2f3ae;
+	border-radius: 50px;
+	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	background-color: #f2f3ae;
+	color: #3c1518;
+	opacity: 0.7;
+	display: block;
+}
+.banner-button a
+{
+	color: #3c1518
+}
+
+.banner-button:hover
+{
+	opacity: 1;
+	transition: all 0.3s linear;
+}
+.content
+{
+	margin-top: 30%;
+	text-align: center;
+
+}
+
+.text
+{
+	font-size: 30px;
+}
+.icon
+{
+	font-size: 100px;
+}
+h1
+{
+	font-size: 60px;
+	margin-bottom: 10%;
+	font-weight: 600;
+
+}
+ol
+{
+	list-style-type: none;
+}
+

@@ -1,0 +1,11 @@
+var element = document.querySelector( 'join' );
+
+window.addEventListener( 'scroll', function f(e) {
+	var offset = element.getBoundingClientRect();
+	
+	if ( window.scrollY >= offset.top) {
+		element.classList.add( 'animation' );
+		
+		window.removeEventListener( 'scroll', f );
+	}
+} );

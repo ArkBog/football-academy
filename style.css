@@ -59,8 +59,6 @@ a:hover
 	margin-bottom: 5px;
 	clear: both;
 
-
-
 }
 
 .menu ul >li:hover > ul
@@ -120,7 +118,6 @@ a:hover
 {
 	margin-top: 30%;
 	text-align: center;
-
 }
 
 .text
@@ -142,4 +139,149 @@ ol
 {
 	list-style-type: none;
 }
+.coach
+{
+	width: 300px;
+	height: 500px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
 
+.coach h1
+{
+	font-size: 20px;
+}
+.coach-text
+{
+	font-size: 18px;
+	margin-top: 10px;
+}
+.coach-text ul
+{
+	list-style-type: none;
+}
+.coach-photo
+{
+	width: 300px;
+	border-radius: 5px 5px 0px 0px;
+}
+
+
+.table-responsive
+{
+	color: #f2f3ae;
+	text-transform: uppercase;
+}
+
+.table-schedule
+{
+		border-collapse: collapse;
+}
+
+.matchday
+{
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 2%;
+}
+.foot
+{
+	background-color: #F2F3AE;
+	color: #3C1518;
+}
+
+.foot a
+{
+	color: #3C1518;;
+}
+
+.foot a:hover
+{
+	color: #A44200;
+	transition: all 0.3s linear;
+}
+
+.logo-foot
+{
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 20px;
+	margin-top: 14px;
+}
+.foot-text
+{
+	font-size: 30px;
+	font-weight: 600;
+}
+.icon-foot
+{
+	font-size: 30px;
+	margin-right: 2%;
+}
+.foot li
+{
+	list-style-type: none;
+}
+
+.signature
+{
+	margin-top: 15px;
+	font-size: 10px;
+}
+
+@media (max-width:  768px)
+{
+
+	.banner
+	{
+		font-size: 30px;
+	}
+	.content
+	{
+		margin-top: 40%;
+	}
+	.banner-button
+	{
+		width: 50%;
+	}
+	.banner
+	{
+		padding-top: 10%;
+		padding-bottom: 30%;
+	}
+	.hidden
+	{
+		display: none;
+	}
+	.logo-foot
+	{
+		display: none;
+	}
+	.foot-sm
+	{
+		text-align: center;
+	}
+}
+@media (max-width: 1200px)
+{
+
+		.logo
+	{
+		display: none;
+	}
+	.menu
+	{
+		font-size: 12px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.menu ul > li
+	{
+		width:  100px;
+	}
+	.menu ul > li > ul > li
+	{
+	width: 100px;
+	}
+}

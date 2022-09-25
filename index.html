@@ -11,32 +11,49 @@
  <link rel="stylesheet" href="css/bootstrap.min.css">
  <link rel="stylesheet" href="style.css" type="text/css"/>
  <script src="https://unpkg.com/scrollreveal"></script>
- <script src="script.js"></script>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script src="jquery.scrollTo.min.js"></script>
+
+ <script>
+ 	 	jQuery(function($)
+ 	{
+ 		$.scrollTo(0);
+ 		$('.op1').click(function(){$.scrollTo($('#joinus'), 500); });
+ 		$('.op2').click(function(){$.scrollTo($('#aboutus'), 500); });
+ 		$('.op3').click(function(){$.scrollTo($('#successes'), 500); });
+ 		$('.op4').click(function(){$.scrollTo($('#teams'), 500); });
+ 		$('.op5').click(function(){$.scrollTo($('#coaches'), 500); });
+ 		$('.op6').click(function(){$.scrollTo($('#schedule'), 500); });
+ 		$('.op7').click(function(){$.scrollTo($('#contact'), 500); });
+ 	}
+
+ 		);
+
+ </script>
 </head>
 <body>
 	<header>
 		<nav>
 			<div class="row mx-0">
-				<div class="col-7 logo">
+				<div class="col-3 col-xl-7 logo">
 
 				<a href="index.html">Logo</a>
 					
 				</div>
 
-				<div class="menu col-5 float-end">
+				<div class="menu col-12 col-xl-5 float-end">
 					<ul>
-						<li><a href="#">Join</a></li>
-						<li><a href="#">About us</a>
+						<li><a class="op1" href="#">Join</a></li>
+						<li ><a clas="op2" href="#" >About us</a>
 							<ul class="submenu">
-								<li><a href="#">Succes</a></li>
-								<li><a href="#">Teams</a></li>
-								<li><a href="#">Coaches</a></li>	
+								<li ><a class="op3" href="#" >Successes</a></li>
+								<li ><a class="op4" href="#" >Teams</a></li>
+								<li ><a class="op5" href="#" >Coaches</a></li>	
 							</ul>
 						</li>
 					
-						<li><a href="#">Schedule</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a class="op6" href="#" >Schedule</a></li>
+						<li><a class="op7" href="#" >Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -46,7 +63,7 @@
 			<div class="banner">
 				<p> The best football academy in your neighborhood</p>
 				
-					<a href="#" class="banner-button">Join us</a> 
+					<a href="#" class="banner-button op1">Join us</a> 
 				
 			</div>
 		</section>
@@ -59,31 +76,33 @@
 	</header>
 
 	<main>
-		<section>
-			<div class="content mb-5 mx-5" id="joinus">
+		<section id="joinus" >
+			<div class="content mb-5 mx-5" >
 				<header>
-					<h1>How to join us?</h1>
+					<h1 >How to join us?</h1>
 				</header>
 				<div class="row mx-0">
-					<div class="col-6 text">
+					<div class="col-12 col-md-6 text">
 
-						Fill in the online form or print it and bring it to the first training session.
+						Fill in the <strong><a href="#"> online form </a></strong> or <strong><a href="#">print</a></strong> it and bring it to the first training session.
 					
 					</div>
-					<div class="col-6">
+					<div class="col-6 hidden">
 						<i class="fa-solid fa-pen-nib icon"></i>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section>
-			<div class="content mb-5 mx-5" id="">
+		<section id="aboutus">
+			<article id="successes">
+			<div class="content mb-5 mx-5" >
 				<header>
 					<h1>Something about us</h1>
 				</header>
+				
 				<div class="row mx-0">
-					<div class="col-6 text">
+					<div class="col-12 col-md-6 text" >
 
 						<ol>
 							<li>3 x Champions of Region,</li>
@@ -93,15 +112,16 @@
 						</ol>
 					
 					</div>
-					<div class="col-6">
+					<div class="col-6 hidden">
 						<i class="fa-solid fa-trophy icon"></i>
 					</div>
 				</div>
 			</div>
+			</article>
 		</section>
 
-		<section>
-			<div class="content mb-5 mx-5" id="">
+		<section id="teams">
+			<div class="content mb-5 mx-5">
 				<header>
 					<h1>Our Teams</h1>
 				</header>
@@ -139,8 +159,235 @@
 				</div>
 			</div>
 		</section>
+
+		<section id="coaches">
+			<div class="content mb-5 mx-5">
+				<header>
+					<h1>Our Coaches</h1>
+				</header>
+				<div class="row mx-0">
+					<div class="col-4 coach mx-auto">
+						<div class="coach shadow">
+								<img src="img/coach-team-post.jpg" class="coach-photo" alt="">
+							<div class="coach-text">
+								<h1>Jan Kowalski<br>
+								U-6, U-10 Boys Coach</h1>
+								<ul>
+									<li>3 x Champion of Country,</li>
+									<li>250 games in 1 Division,</li>
+									<li>UEFA A License.</li>
+								</ul>
+							</div>
+						</div>
+						
+					</div>
+
+					<div class="col-4 coach mx-auto">
+
+						<div class="coach shadow">
+								<img src="img/BrandtAction2.jpg" class="coach-photo" alt="">
+							<div class="coach-text">
+								<h1>Jon Snow<br>
+								U-13, U-16 Boys Coach</h1>
+								<ul>
+									<li>480 games in 1 Division,</li>
+									<li>25 games in National Team</li>
+									<li>UEFA Pro License.</li>
+								</ul>
+							</div>
+						</div>
+						
+					</div>
+
+					<div class="col-4 coach mx-auto">
+
+						<div class="coach shadow">
+								<img src="img/thumbnail_2018-ash-coching-900x615.jpg" class="coach-photo" alt="">
+							<div class="coach-text">
+								<h1>Lisa Smith<br>
+								Girls Coach</h1>
+								<ul>
+									<li>357 games in 1 Division,</li>
+									<li>89 games in National Team</li>
+									<li>UEFA Pro License.</li>
+								</ul>
+							</div>
+						</div>
+						
+						
+					</div>
+				</div>
+
+				<div class="row mx-0 mt-5">
+					<div class="col-4 coach mx-auto">
+
+						<div class="coach shadow">
+								<img src="img/Rachael_Sushner.jpg" class="coach-photo" alt="">
+							<div class="coach-text">
+								<h1>Marta Dawson<br>
+								Girls Assistant</h1>
+								<ul>
+									<li>A graduate of the Academy of Physical Education,</li>
+									<li>50 games in 1 Divison, </li>
+									<li>National association license.</li>
+								</ul>
+							</div>
+						</div>
+						
+					</div>
+
+					<div class="col-4 coach mx-auto">
+
+						<div class="coach shadow">
+								<img src="img/Private-soccer-tutor-David-helping-Sydney-sider-aron-improve-his-soccer-skills.jpg" class="coach-photo" alt="">
+							<div class="coach-text">
+								<h1>Andrew Grealish<br>
+								Boys Assistant</h1>
+								<ul>
+									<li>A graduate of the Academy of Physical Education,</li>
+									<li>300 games in lower divisions, </li>
+									<li>National association license.</li>
+								</ul>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="schedule">
+			<div class="content mb-5 mx-5"> 
+				<header>
+					<h1>Schedule</h1>
+				</header>
+				<div class="row mx-0">
+					<div class="table-responsive mx-auto">
+							<table class="table-schedule mx-auto" cellpadding="15">
+					<tr>
+						
+						<td colspan="1"></td><th>17:00-18:00</th><th>18:00-19:00</th><th>19:00-20:00</th><th>20:00-21:00</th>
+					</tr>
+
+					<tr>
+						<th>MONDAY</th>
+						<td>U-6 Boys</td>
+						<td>U-10 Boys</td>
+						<td>U-13 Boys</td>
+						<td>U-16 Boys</td>
+					</tr>
+
+					<tr>
+						<th>Tuesday</th>
+						<td>U-8 Girls</td>
+						<td>U-11 Girls</td>
+						<td>U-16 Girls</td>											
+					</tr>
+						
+					<tr>
+						<th>Wednesday</th>
+						<td>U-6 Boys</td>
+						<td>U-10 Boys</td>
+						<td>U-13 Boys</td>
+						<td>U-16 Boys</td>					
+					</tr>
+
+					<tr>
+						<th>Thursday</th>
+						<td>U-8 Girls</td>
+						<td>U-11 Girls</td>
+						<td>U-16 Girls</td>					
+					</tr>
+				
+								
+				</table>
+				<p class="matchday"> Friday, Saturday, Sunday: Matchdays</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact">
+			<div class="content mb-5 mx-5">
+				<header>
+					<h1>We are in touch</h1>
+				</header>
+				<div class="row mx-0">
+
+					<div class="col-md-6">
+						<a href="tel:999999999">
+						<i class="fa-solid fa-phone icon"></i>
+						<p class="text">999-999-999</p></a>
+					</div>
+
+					<div class="col-md-6">
+						<a href="mailto:logo@logo.com">
+						<i class="fa-solid fa-envelope icon"></i>
+						<p class="text">logo@logo.com</p></a>
+					</div>
+
+				</div>
+			</div>
+		</section>
 		
 	</main>
+
+	<footer>
+		<div class="foot">
+			<div class="row mx-0 mb-4">
+
+				<div class="col-3 logo-foot">
+					<a href="index.html">Logo</a>
+				</div>
+
+				<div class="col-12 col-md-9 foot-sm">
+
+					<span class="foot-text">The best football academy in your neighborhood</span>
+				</div>
+			
+			</div>
+
+			<div class="row mx-0 mb-4">
+
+				<div class="col-5 mx-auto text-end">
+
+						<ul>
+						<li><a class="op1" href="#">Join</a></li>
+						<li><a class="op2" href="#">About us</a></li>
+						<li><a class="op6" href="#">Schedule</a></li>
+						<li><a class="op7" href="#">Contact</a></li>
+					</ul>
+					
+				</div>
+
+				<div class="col-6 mx-auto text-start">
+
+					<a href="tel:999999999">
+						<i class="fa-solid fa-phone"></i> 999-999-999</a><br>
+
+					<a href="mailto:logo@logo.com">
+						<i class="fa-solid fa-envelope"></i> logo@logo.com</a>
+				</div>
+
+			</div>
+
+			<div class="row mx-0 text-center">
+				<div col-12>
+					<a href="facebook.com"><i class="fa-brands fa-facebook icon-foot"></i></a>
+					<a href="instagram.com"><i class="fa-brands fa-instagram icon-foot"></i></a>
+					<a href="tiktok.com"><i class="fa-brands fa-tiktok icon-foot"></i></a>
+					<a href="twitter.com"><i class="fa-brands fa-twitter icon-foot"></i></a>		
+				</div>	
+			</div>
+
+			<div class="row mx-0">
+
+				<div class="col-12 signature text-center">
+						Created by <a href="https://github.com/ArkBog"><b>ArkBog</b></a>
+				</div>
+				
+			</div>
+		</div>
+	</footer>
 <script>
 	ScrollReveal({
 		reset: true,
@@ -150,6 +397,8 @@
 	});
 	ScrollReveal().reveal('.content', { delay: 400, origin: 'bottom' });
 </script>
+
+
 
 
 

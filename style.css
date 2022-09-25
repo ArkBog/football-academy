@@ -248,7 +248,7 @@ ol
 	.banner
 	{
 		padding-top: 10%;
-		padding-bottom: 30%;
+		padding-bottom: 130%;
 	}
 	.hidden
 	{
@@ -278,10 +278,10 @@ ol
 	}
 	.menu ul > li
 	{
-		width:  100px;
+		width:  80px;
 	}
 	.menu ul > li > ul > li
 	{
-	width: 100px;
+	width: 80px;
 	}
 }

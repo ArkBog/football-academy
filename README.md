@@ -4,7 +4,7 @@
 [Preview](https://arkbog.github.io/football-academy/)
 
 
-Wbesite for a construction football academy. Done for a training.
+Wbesite for a football academy. Done for a training.
 
 
 ## Table of Contents
